@@ -1,0 +1,18 @@
+We can calculate the average of each feature with
+
+SELECT Avg(energy), Avg(valence), Avg(danceability)
+FROM songs;
+
+Then we calculate the average of three given averages to
+have a number that will define someone's Aura.
+
+This method can give bad estimations about someone's aura,
+since it considers the three features (energy,valence,danceability)
+to be equally likely in terms of importance, while a listener can
+tends to prefer high enegetic musics, or musics with low danceability.
+So as a solution to this, we should first figure out what the listener in into,
+by sorting the musics he listens to in terms of each feature.
+Then we can introduce a weight on features, so we privilege some, and we
+reduce some, so when calculating the average, we can have a more precise
+number to classify someone's Aura.
+Of course, there might other better solutions.

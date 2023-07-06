@@ -1,0 +1,11 @@
+In runoff, we will use ranking to select the winner
+
+Here is how it works :
+
+  while true :
+    1.increment every candidate's vote with one for every time he is ranked first
+    2.if a candidate has more than 50% (strict) of votes, he wins -> BREAK
+    3. else :
+      4.if possible : eliminate the ones with the fewest number of votes and redo 1.
+      5.else : return that the vote is tied between remaining candidates
+

@@ -1,0 +1,12 @@
+the algorithm consists of three steps:
+    1. determine for each pair of candidates who won, and by what margin
+    2. sort the pairs of candidates based on the margin
+    3. lock the pairs to the graph as long as this doesn't create a cycle
+
+After this we return the candidate that has no arrow pointing towards it,
+meaning
+
+
+
+
+the first step, we retrieve data from the unsorted list

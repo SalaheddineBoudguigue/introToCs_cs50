@@ -1,0 +1,4 @@
+pseudocoding is being used in the following example:
+* @code
+* import random
+* import javax.servlet.http.Httpserver
